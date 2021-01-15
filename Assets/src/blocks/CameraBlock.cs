@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class CameraBlock : MonoBehaviour
 {
-
 	public static CameraBlock Instance;
 	private Camera _mainCamera;
 	[SerializeField] private Camera _cameraPrefab;
@@ -11,10 +10,6 @@ public class CameraBlock : MonoBehaviour
 	private void Awake()
 	{
 		Instance = this;
-	}
-
-	private void Start()
-	{
 		SpawnCamera();
 		_mainCamera = Camera.main;
 	}
@@ -25,5 +20,4 @@ public class CameraBlock : MonoBehaviour
 	}
 
 	public Camera GetMainCamera() => _mainCamera;
-	
 }

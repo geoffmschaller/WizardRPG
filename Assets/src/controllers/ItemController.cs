@@ -1,9 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
+	private CanvasController _canvasController;
+
+	private void Start()
+	{
+		_canvasController = CanvasBlock.Instance.GetCanvasController();
+	}
+
 	public void InteractWithItem()
 	{
-		Debug.Log("Interacting with item!!!");
+		_canvasController.SetInventory(true);
 	}
 }

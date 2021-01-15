@@ -4,10 +4,9 @@ using Object = System.Object;
 
 public class PlayerBlock : MonoBehaviour
 {
-
 	public static PlayerBlock Instance;
-	private PlayerController _playerController;
 	[SerializeField] private GameObject playerPrefab;
+	private PlayerController _playerController;
 
 
 	private void Awake()
@@ -19,7 +18,7 @@ public class PlayerBlock : MonoBehaviour
 	private void SpawnPlayer()
 	{
 		var spawnedPlayer = Instantiate(playerPrefab, new Vector3(0, 1, 0), Quaternion.identity);
-		_playerController = spawnedPlayer.GetComponentInChildren<PlayerController>();
+		_playerController = spawnedPlayer.GetComponent<PlayerController>();
 	}
 
 	public PlayerController GetPlayerController() => _playerController;

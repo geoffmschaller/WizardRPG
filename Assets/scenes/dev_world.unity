@@ -361,6 +361,8 @@ GameObject:
   - component: {fileID: 1585850015}
   - component: {fileID: 1585850014}
   - component: {fileID: 1585850016}
+  - component: {fileID: 1585850017}
+  - component: {fileID: 1585850018}
   m_Layer: 0
   m_Name: Blocks
   m_TagString: Untagged
@@ -409,6 +411,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraPrefab: {fileID: 9138546901003412812, guid: 193b204430132d4c0a9086ece8003c78,
+    type: 3}
+--- !u!114 &1585850017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585850013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a94169feabc730cb8c4bd9a1c87d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasPrefab: {fileID: 6358340286743336240, guid: c3d901c3f3c356fc1878e2d4f3d7eea4,
+    type: 3}
+--- !u!114 &1585850018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585850013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f5ce02bb364ea8a8875006192800a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelPrefab: {fileID: 2844544705352091240, guid: 720321bc3c31bf1139c864319e37e9e0,
     type: 3}
 --- !u!1001 &1833091144705778388
 PrefabInstance:

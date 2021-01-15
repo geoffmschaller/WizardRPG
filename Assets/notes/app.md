@@ -15,19 +15,20 @@ Main Block Items. Not destroyed on level load. They do not interact with anythin
 
 ### Controllers
 
-Are loaded everytime a level loads. Control single functions.
+Are spawned everytime a level loads. Are the containers that hold elements. Containers can talk to other containers. These listen for events to be triggered.
 
-1. Player Movement Controller
-2. Player Interaction Controller
-3. UI Stat Bar Controller
-4. UI Inventory Controller
+1. Player Controller
+2. Canvas Controller
+3. Item Controller
 
 --- 
 
 #### Elements
 
-1. UI Stat Bar Slider
-2. UI Inventory Item
-3. Camera folow script
+Individual Scripts that control single functions. These trigger Events.
+
+1. Player Movement Element
+2. Player Input Element
+3. Camera Follow Element
 
 ---
