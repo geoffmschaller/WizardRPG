@@ -19,7 +19,9 @@ public class PlayerMovementElement : MonoBehaviour
         {
             var _destinationItem = _playerDestinationUtil.GetDestinationItem();
             if(_destinationItem != null)
-                _destinationItem.InteractWithItem();
+                PlayerBlock.Instance.GetPlayerController().PlayerArrivedAtDestination(_destinationItem);
+            else
+                PlayerBlock.Instance.GetPlayerController().PlayerArrivedAtDestination();
             _playerDestinationUtil = null;
         }
         if (!Input.GetMouseButtonDown(0)) return;

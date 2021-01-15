@@ -5,11 +5,18 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-
-    private PlayerMovementElement _playerMovementElement;
-
     private void Awake()
     {
         gameObject.AddComponent<PlayerMovementElement>();
+    }
+
+    public void PlayerArrivedAtDestination(ItemController itemToInteractWith)
+    {
+        itemToInteractWith.InteractWithItem();
+    }
+
+    public void PlayerArrivedAtDestination()
+    {
+        Debug.Log("Arrived at Location!!!");
     }
 }
